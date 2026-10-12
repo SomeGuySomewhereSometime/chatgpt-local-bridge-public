@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Bridge Control NOBUBBLEWARP
+Comment=Estado, integrações e projetos da bridge sem Bubblewrap
+Exec=/home/bridge-user/chatgpt-local-bridge-NOBUBBLEWARP/interface/start.sh
+Icon=/home/bridge-user/chatgpt-local-bridge-NOBUBBLEWARP/interface/bridge-control.svg
+Terminal=false
+Categories=Utility;
+StartupNotify=true
+StartupWMClass=io.github.local.BridgeControl.NOBUBBLEWARP

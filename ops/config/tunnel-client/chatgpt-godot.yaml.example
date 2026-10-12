@@ -1,0 +1,17 @@
+# Replace tunnel_id only after creating the Godot tunnel. Never put a key here.
+config_version: 1
+control_plane:
+  base_url: https://api.openai.com
+  tunnel_id: REPLACE_WITH_GODOT_TUNNEL_ID
+  api_key: file:/home/bridge-user/.config/mcp-integration/credentials/chatgpt-godot.key
+health:
+  listen_addr: 127.0.0.1:8084
+admin_ui:
+  open_browser: false
+log:
+  level: info
+  format: json
+mcp:
+  server_urls:
+  - channel: main
+    url: http://127.0.0.1:9090/mcp

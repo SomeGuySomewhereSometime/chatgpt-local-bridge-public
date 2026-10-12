@@ -1,0 +1,112 @@
+{
+  "applications": {
+    "firefox": {
+      "executable": "/usr/bin/firefox",
+      "allow_args": false
+    },
+    "chrome": {
+      "executable": "/usr/bin/google-chrome",
+      "allow_args": false,
+      "fixed_args": [
+        "--force-renderer-accessibility=complete"
+      ]
+    },
+    "text-editor": {
+      "executable": "/usr/bin/gnome-text-editor",
+      "allow_args": false
+    },
+    "files": {
+      "executable": "/usr/bin/nautilus",
+      "allow_args": false
+    },
+    "blender": {
+      "executable": "/usr/bin/snap",
+      "fixed_args": [
+        "run",
+        "blender"
+      ],
+      "allow_args": false,
+      "running_executable_prefixes": [
+        "/snap/blender"
+      ]
+    },
+    "unityhub": {
+      "executable": "/usr/bin/unityhub",
+      "allow_args": false
+    },
+    "text-editor-scratch": {
+      "executable": "/usr/bin/gnome-text-editor",
+      "fixed_args": [
+        "--standalone",
+        "--new-window"
+      ],
+      "fresh_data_directory": true,
+      "allow_args": false
+    },
+    "obs": {
+      "executable": "/usr/bin/obs",
+      "allow_args": false,
+      "running_executables": [
+        "/usr/bin/obs"
+      ],
+      "fixed_args": [
+        "--profile",
+        "Bridge",
+        "--collection",
+        "Bridge",
+        "--only-bundled-plugins"
+      ]
+    }
+  },
+  "process_kill": {
+    "allowed_executables": [
+      "/usr/bin/firefox",
+      "/usr/bin/google-chrome",
+      "/usr/bin/obs"
+    ],
+    "allowed_signals": [
+      2,
+      15
+    ],
+    "allowed_executable_prefixes": []
+  },
+  "filesystem": {
+    "denied_paths": [
+      "/home/bridge-user/.ssh",
+      "/home/bridge-user/.gnupg",
+      "/home/bridge-user/.local/share/keyrings",
+      "/home/bridge-user/.config/tunnel-client",
+      "/home/bridge-user/.config/mcp-integration",
+      "/home/bridge-user/.local/state/chatgpt-local-bridge-NOBUBBLEWARP",
+      "/home/bridge-user/.codex/auth.json"
+    ],
+    "read_only_paths": [
+      "/home/bridge-user/.config/systemd/user",
+      "/home/bridge-user/.local/bin",
+      "/home/bridge-user/.bashrc",
+      "/home/bridge-user/.profile"
+    ]
+  },
+  "desktop": {
+    "enabled": false
+  },
+  "memory": {
+    "enabled": true,
+    "path": "/home/bridge-user/.local/state/chatgpt-local-bridge-NOBUBBLEWARP/memory/memory.sqlite3",
+    "retention_days": 30,
+    "max_commands": 5000,
+    "max_entries_per_project": 2000
+  },
+  "obs": {
+    "host": "127.0.0.1",
+    "port": 4455,
+    "password_file": "/home/bridge-user/.config/mcp-integration/obs-password"
+  },
+  "execution": {
+    "mode": "host",
+    "job_backend": "systemd-user"
+  },
+  "operations": {
+    "directory": "/home/bridge-user/.local/state/chatgpt-local-bridge-NOBUBBLEWARP/operations"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Bridge \u00b7 ChatGPT Continuity",
+  "version": "0.14.0",
+  "description": "Local project connections, reviewed messages and explicitly started, bounded goal loops.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqekVK54FyN3DO9UNJ/tas2FtjkcgoTbuCAde7+ry/TWBgCsZwcUW7NmE6evRr9cj4HCp4Aoyux+8mIT4C03DpBlgDc1nh8noar8VdssLCxuz2R85VCLd2xCzGJjhaG86NWAPNoClnD/pm7WcgOrA0fJPB71mPCEQq6B3UBwX4YPMKr249WRIfcOiqb2kFzDikn4jC0fUJ+/Do/VPiepxfCuPTdk0SJe42U+/HTz87jZBBsv+qefUDTJZ0Om542WPw2o7hjEGPEDquEB77LlLQ1jw1hc8FPNsy3EYcjBKpozmuu6vC/nM3iF/lB5vwNRDCg51RHD9m2VZns8eOsDxhQIDAQAB",
+  "permissions": [
+    "nativeMessaging",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

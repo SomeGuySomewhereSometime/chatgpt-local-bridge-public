@@ -1,0 +1,14 @@
+[Unit]
+Description=Independent LibreSprite MCP (mcp 1.30.0)
+After=network.target
+StartLimitIntervalSec=120
+StartLimitBurst=3
+[Service]
+Type=simple
+ExecStart=/home/bridge-user/Applications/libresprite-mcp-0.1.3/bin/python -B /home/bridge-user/.local/lib/mcp-integration/libresprite_entry.py
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+UMask=0077
+[Install]
+WantedBy=default.target

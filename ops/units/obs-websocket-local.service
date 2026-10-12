@@ -1,0 +1,13 @@
+[Unit]
+Description=Restrict OBS WebSocket to this computer
+After=network-pre.target
+Before=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/nft -f /etc/obs-websocket-local.nft
+ExecStop=/usr/sbin/nft delete table inet obs_bridge
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

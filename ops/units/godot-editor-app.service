@@ -1,0 +1,11 @@
+[Unit]
+Description=Godot editor opened conservatively by Local Dev Bridge
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -B /home/bridge-user/.local/lib/mcp-integration/godot_control.py run-app
+Restart=no
+TimeoutStopSec=infinity
+SendSIGKILL=no
+UMask=0077

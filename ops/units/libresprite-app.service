@@ -1,0 +1,10 @@
+[Unit]
+Description=LibreSprite app opened conservatively by Bridge
+After=graphical-session.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -B /home/bridge-user/.local/lib/mcp-integration/libresprite_control.py run-app
+Restart=no
+TimeoutStopSec=infinity
+SendSIGKILL=no
+UMask=0077

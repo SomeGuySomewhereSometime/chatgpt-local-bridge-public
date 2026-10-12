@@ -1,0 +1,792 @@
+{
+  "host": "http://localhost:22153",
+  "logLevel": "Warning",
+  "keepServerRunning": true,
+  "transportMethod": "streamableHttp",
+  "authOption": "none",
+  "connectionMode": "Custom",
+  "tools": [
+    {
+      "name": "assets-copy",
+      "enabled": true
+    },
+    {
+      "name": "assets-create-folder",
+      "enabled": true
+    },
+    {
+      "name": "assets-delete",
+      "enabled": true
+    },
+    {
+      "name": "assets-find",
+      "enabled": true
+    },
+    {
+      "name": "assets-find-built-in",
+      "enabled": true
+    },
+    {
+      "name": "assets-get-data",
+      "enabled": true
+    },
+    {
+      "name": "assets-material-create",
+      "enabled": true
+    },
+    {
+      "name": "assets-modify",
+      "enabled": true
+    },
+    {
+      "name": "assets-move",
+      "enabled": true
+    },
+    {
+      "name": "assets-refresh",
+      "enabled": true
+    },
+    {
+      "name": "assets-prefab-close",
+      "enabled": true
+    },
+    {
+      "name": "assets-prefab-create",
+      "enabled": true
+    },
+    {
+      "name": "assets-prefab-instantiate",
+      "enabled": true
+    },
+    {
+      "name": "assets-prefab-open",
+      "enabled": true
+    },
+    {
+      "name": "assets-prefab-save",
+      "enabled": true
+    },
+    {
+      "name": "assets-shader-get-data",
+      "enabled": true
+    },
+    {
+      "name": "assets-shader-list-all",
+      "enabled": true
+    },
+    {
+      "name": "console-clear-logs",
+      "enabled": false
+    },
+    {
+      "name": "console-get-logs",
+      "enabled": true
+    },
+    {
+      "name": "editor-application-get-state",
+      "enabled": true
+    },
+    {
+      "name": "editor-application-set-state",
+      "enabled": true
+    },
+    {
+      "name": "editor-selection-get",
+      "enabled": false
+    },
+    {
+      "name": "editor-selection-set",
+      "enabled": false
+    },
+    {
+      "name": "gameobject-component-add",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-component-destroy",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-component-get",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-component-list-all",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-component-modify",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-create",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-destroy",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-duplicate",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-find",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-modify",
+      "enabled": true
+    },
+    {
+      "name": "gameobject-set-parent",
+      "enabled": true
+    },
+    {
+      "name": "object-get-data",
+      "enabled": true
+    },
+    {
+      "name": "object-modify",
+      "enabled": true
+    },
+    {
+      "name": "package-add",
+      "enabled": true
+    },
+    {
+      "name": "package-list",
+      "enabled": true
+    },
+    {
+      "name": "package-remove",
+      "enabled": false
+    },
+    {
+      "name": "package-search",
+      "enabled": true
+    },
+    {
+      "name": "profiler-capture-frame",
+      "enabled": false
+    },
+    {
+      "name": "profiler-clear-data",
+      "enabled": false
+    },
+    {
+      "name": "profiler-enable-module",
+      "enabled": false
+    },
+    {
+      "name": "profiler-get-memory-stats",
+      "enabled": false
+    },
+    {
+      "name": "profiler-get-rendering-stats",
+      "enabled": false
+    },
+    {
+      "name": "profiler-get-script-stats",
+      "enabled": false
+    },
+    {
+      "name": "profiler-get-status",
+      "enabled": false
+    },
+    {
+      "name": "profiler-list-modules",
+      "enabled": false
+    },
+    {
+      "name": "profiler-load-data",
+      "enabled": false
+    },
+    {
+      "name": "profiler-save-data",
+      "enabled": false
+    },
+    {
+      "name": "profiler-start",
+      "enabled": false
+    },
+    {
+      "name": "profiler-stop",
+      "enabled": false
+    },
+    {
+      "name": "reflection-method-call",
+      "enabled": false
+    },
+    {
+      "name": "reflection-method-find",
+      "enabled": false
+    },
+    {
+      "name": "scene-create",
+      "enabled": true
+    },
+    {
+      "name": "scene-get-data",
+      "enabled": true
+    },
+    {
+      "name": "scene-list-opened",
+      "enabled": true
+    },
+    {
+      "name": "scene-open",
+      "enabled": true
+    },
+    {
+      "name": "scene-save",
+      "enabled": true
+    },
+    {
+      "name": "scene-set-active",
+      "enabled": true
+    },
+    {
+      "name": "scene-unload",
+      "enabled": true
+    },
+    {
+      "name": "screenshot-camera",
+      "enabled": true
+    },
+    {
+      "name": "screenshot-game-view",
+      "enabled": true
+    },
+    {
+      "name": "screenshot-isolated",
+      "enabled": true
+    },
+    {
+      "name": "screenshot-scene-view",
+      "enabled": true
+    },
+    {
+      "name": "script-delete",
+      "enabled": false
+    },
+    {
+      "name": "script-execute",
+      "enabled": true
+    },
+    {
+      "name": "script-read",
+      "enabled": false
+    },
+    {
+      "name": "script-update-or-create",
+      "enabled": false
+    },
+    {
+      "name": "tests-run",
+      "enabled": true
+    },
+    {
+      "name": "unity-tool-list",
+      "enabled": true
+    },
+    {
+      "name": "tool-set-enabled-state",
+      "enabled": false
+    },
+    {
+      "name": "type-get-json-schema",
+      "enabled": false
+    },
+    {
+      "name": "animation-create",
+      "enabled": true
+    },
+    {
+      "name": "animation-get-data",
+      "enabled": true
+    },
+    {
+      "name": "animation-modify",
+      "enabled": true
+    },
+    {
+      "name": "animator-create",
+      "enabled": true
+    },
+    {
+      "name": "animator-get-data",
+      "enabled": true
+    },
+    {
+      "name": "animator-modify",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-add-extension",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-brain-ensure",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-camera-create",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-camera-get",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-camera-list",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-get",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-modify",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-aim",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-body",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-default-blend",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-lens",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-noise",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-priority",
+      "enabled": true
+    },
+    {
+      "name": "cinemachine-set-targets",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-action-add",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-actionmap-add",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-actionmap-remove",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-action-remove",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-asset-create",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-binding-add",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-binding-composite-add",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-binding-remove",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-binding-set",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-controlscheme-add",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-get",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-modify",
+      "enabled": true
+    },
+    {
+      "name": "inputsystem-save",
+      "enabled": true
+    },
+    {
+      "name": "navigation-agent-add",
+      "enabled": true
+    },
+    {
+      "name": "navigation-agent-set-destination",
+      "enabled": true
+    },
+    {
+      "name": "navigation-get",
+      "enabled": true
+    },
+    {
+      "name": "navigation-link-add",
+      "enabled": true
+    },
+    {
+      "name": "navigation-list",
+      "enabled": true
+    },
+    {
+      "name": "navigation-modifier-add",
+      "enabled": true
+    },
+    {
+      "name": "navigation-modifier-volume-add",
+      "enabled": true
+    },
+    {
+      "name": "navigation-modify",
+      "enabled": true
+    },
+    {
+      "name": "navigation-set-bake-settings",
+      "enabled": true
+    },
+    {
+      "name": "navigation-surface-add",
+      "enabled": true
+    },
+    {
+      "name": "navigation-surface-bake",
+      "enabled": true
+    },
+    {
+      "name": "particle-system-get",
+      "enabled": true
+    },
+    {
+      "name": "particle-system-modify",
+      "enabled": true
+    },
+    {
+      "name": "probuilder-bevel",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-bridge",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-connect-edges",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-create-shape",
+      "enabled": true
+    },
+    {
+      "name": "probuilder-delete-faces",
+      "enabled": true
+    },
+    {
+      "name": "probuilder-extrude",
+      "enabled": true
+    },
+    {
+      "name": "probuilder-flip-normals",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-get-mesh-info",
+      "enabled": true
+    },
+    {
+      "name": "probuilder-merge-objects",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-create-poly-shape",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-set-face-material",
+      "enabled": true
+    },
+    {
+      "name": "probuilder-set-pivot",
+      "enabled": false
+    },
+    {
+      "name": "probuilder-subdivide-edges",
+      "enabled": false
+    },
+    {
+      "name": "splines-add-knot",
+      "enabled": true
+    },
+    {
+      "name": "splines-add-spline",
+      "enabled": true
+    },
+    {
+      "name": "splines-container-create",
+      "enabled": true
+    },
+    {
+      "name": "splines-evaluate",
+      "enabled": true
+    },
+    {
+      "name": "splines-get",
+      "enabled": true
+    },
+    {
+      "name": "splines-get-knots",
+      "enabled": true
+    },
+    {
+      "name": "splines-insert-knot",
+      "enabled": true
+    },
+    {
+      "name": "splines-list",
+      "enabled": true
+    },
+    {
+      "name": "splines-modify",
+      "enabled": true
+    },
+    {
+      "name": "splines-remove-knot",
+      "enabled": true
+    },
+    {
+      "name": "splines-set-closed",
+      "enabled": true
+    },
+    {
+      "name": "splines-set-knot",
+      "enabled": true
+    },
+    {
+      "name": "splines-set-tangent-mode",
+      "enabled": true
+    }
+  ],
+  "prompts": [
+    {
+      "name": "setup-animator-controller",
+      "enabled": false
+    },
+    {
+      "name": "create-simple-tweening",
+      "enabled": false
+    },
+    {
+      "name": "setup-timeline-sequence",
+      "enabled": false
+    },
+    {
+      "name": "add-animation-events",
+      "enabled": false
+    },
+    {
+      "name": "create-procedural-animation",
+      "enabled": false
+    },
+    {
+      "name": "setup-sprite-animation",
+      "enabled": false
+    },
+    {
+      "name": "add-ik-system",
+      "enabled": false
+    },
+    {
+      "name": "create-animation-blending",
+      "enabled": false
+    },
+    {
+      "name": "organize-project-structure",
+      "enabled": false
+    },
+    {
+      "name": "import-setup-sprites",
+      "enabled": false
+    },
+    {
+      "name": "setup-audio-manager",
+      "enabled": false
+    },
+    {
+      "name": "configure-build-settings",
+      "enabled": false
+    },
+    {
+      "name": "create-material-library",
+      "enabled": false
+    },
+    {
+      "name": "setup-asset-bundles",
+      "enabled": false
+    },
+    {
+      "name": "optimize-texture-settings",
+      "enabled": false
+    },
+    {
+      "name": "setup-addressables",
+      "enabled": false
+    },
+    {
+      "name": "add-debug-visualization",
+      "enabled": false
+    },
+    {
+      "name": "setup-performance-profiling",
+      "enabled": false
+    },
+    {
+      "name": "create-test-scene",
+      "enabled": false
+    },
+    {
+      "name": "add-logging-system",
+      "enabled": false
+    },
+    {
+      "name": "create-unit-tests",
+      "enabled": false
+    },
+    {
+      "name": "setup-debug-ui",
+      "enabled": false
+    },
+    {
+      "name": "add-assertion-checks",
+      "enabled": false
+    },
+    {
+      "name": "create-automated-tests",
+      "enabled": false
+    },
+    {
+      "name": "add-standard-components",
+      "enabled": false
+    },
+    {
+      "name": "setup-player-controller",
+      "enabled": false
+    },
+    {
+      "name": "create-ui-canvas",
+      "enabled": false
+    },
+    {
+      "name": "add-physics-interactions",
+      "enabled": false
+    },
+    {
+      "name": "create-interactive-object",
+      "enabled": false
+    },
+    {
+      "name": "setup-audio-source",
+      "enabled": false
+    },
+    {
+      "name": "create-particle-effects",
+      "enabled": false
+    },
+    {
+      "name": "setup-animator-component",
+      "enabled": false
+    },
+    {
+      "name": "setup-basic-scene",
+      "enabled": false
+    },
+    {
+      "name": "organize-scene-hierarchy",
+      "enabled": false
+    },
+    {
+      "name": "add-lighting-setup",
+      "enabled": false
+    },
+    {
+      "name": "create-prefab-from-selection",
+      "enabled": false
+    },
+    {
+      "name": "setup-scene-camera",
+      "enabled": false
+    },
+    {
+      "name": "create-environment-template",
+      "enabled": false
+    },
+    {
+      "name": "generate-monobehaviour-template",
+      "enabled": false
+    },
+    {
+      "name": "add-event-system",
+      "enabled": false
+    },
+    {
+      "name": "create-singleton-manager",
+      "enabled": false
+    },
+    {
+      "name": "setup-coroutine-framework",
+      "enabled": false
+    },
+    {
+      "name": "create-scriptableobject-data",
+      "enabled": false
+    },
+    {
+      "name": "implement-object-pooling",
+      "enabled": false
+    },
+    {
+      "name": "add-state-machine",
+      "enabled": false
+    },
+    {
+      "name": "setup-dependency-injection",
+      "enabled": false
+    }
+  ],
+  "resources": [
+    {
+      "name": "GameObject from Current Scene by Path",
+      "enabled": false
+    }
+  ],
+  "skillAutoGenerate": {
+    "codex": true
+  },
+  "timeoutMs": 10000,
+  "keepConnected": true,
+  "maxConsecutiveConnectionFailures": 0,
+  "connectTimeoutSeconds": 0,
+  "generateSkillFiles": false,
+  "skillsPath": ".agents/skills",
+  "token": ""
+}

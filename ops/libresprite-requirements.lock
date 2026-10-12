@@ -1,0 +1,3 @@
+# Compatible installed runtime. MCP 2.x breaks LibreSprite MCP 0.1.3.
+libresprite-mcp==0.1.3
+mcp==1.30.0

@@ -1,0 +1,4 @@
+# Only OBS WebSocket port 4455; do not flush or replace any existing firewall.
+add table inet obs_bridge
+add chain inet obs_bridge input { type filter hook input priority -5; policy accept; }
+add rule inet obs_bridge input iifname != "lo" tcp dport 4455 counter reject with tcp reset

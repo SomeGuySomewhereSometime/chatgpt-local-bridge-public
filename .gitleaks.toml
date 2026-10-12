@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Exact public Chrome extension key; keeps the existing extension ID. Not a private/API key."
+condition = "AND"
+paths = ['(^|/)companion/extension/manifest\.json$']
+regexTarget = "line"
+regexes = ['^\s*"key"\s*:\s*"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqekVK54FyN3DO9UNJ/tas2FtjkcgoTbuCAde7\+ry/TWBgCsZwcUW7NmE6evRr9cj4HCp4Aoyux\+8mIT4C03DpBlgDc1nh8noar8VdssLCxuz2R85VCLd2xCzGJjhaG86NWAPNoClnD/pm7WcgOrA0fJPB71mPCEQq6B3UBwX4YPMKr249WRIfcOiqb2kFzDikn4jC0fUJ\+/Do/VPiepxfCuPTdk0SJe42U\+/HTz87jZBBsv\+qefUDTJZ0Om542WPw2o7hjEGPEDquEB77LlLQ1jw1hc8FPNsy3EYcjBKpozmuu6vC/nM3iF/lB5vwNRDCg51RHD9m2VZns8eOsDxhQIDAQAB"']

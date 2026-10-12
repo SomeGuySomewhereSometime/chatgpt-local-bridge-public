@@ -1,0 +1,18 @@
+[Unit]
+Description=ChatGPT MCP tunnel (chatgpt-godot)
+After=network-online.target godot-editor-mcp.service
+Wants=godot-editor-mcp.service
+ConditionPathExists=/home/bridge-user/.config/tunnel-client/chatgpt-godot.yaml
+StartLimitIntervalSec=120
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=/home/bridge-user/.local/bin/tunnel-client run --profile chatgpt-godot
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+UMask=0077
+
+[Install]
+WantedBy=default.target

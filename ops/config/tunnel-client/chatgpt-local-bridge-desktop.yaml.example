@@ -1,0 +1,16 @@
+config_version: 1
+control_plane:
+  base_url: "https://api.openai.com"
+  tunnel_id: "REPLACE_WITH_DESKTOP_TUNNEL_ID"
+  api_key: "file:/home/bridge-user/.config/mcp-integration/credentials/chatgpt-local-bridge-desktop.key"
+health:
+  listen_addr: "127.0.0.1:8091"
+admin_ui:
+  open_browser: false
+log:
+  level: info
+  format: json
+mcp:
+  commands:
+    - channel: main
+      command: "/home/bridge-user/chatgpt-local-bridge-NOBUBBLEWARP/start-desktop.sh"

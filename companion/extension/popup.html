@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Bridge · ChatGPT Continuity</title>
+<link rel="stylesheet" href="popup.css"><body>
+<h1>Continue in ChatGPT</h1>
+<button id="open-workspace">Open full workspace ↗</button><span id="version" class="small"></span>
+<p class="small">Messages are sent to the ChatGPT conversation shown below.</p>
+<section class="destination"><strong id="conversation">Checking conversation…</strong><p id="address" class="small"></p><p id="connection">Not connected</p><p id="state">Checking page…</p></section>
+<p id="status" role="status" aria-live="polite"></p>
+<details id="settings" open><summary>Project connection</summary>
+<label>Project folder<input id="project" placeholder="/home/bridge-user/Documents/MyProject" autocomplete="off"></label>
+<label>Task name or existing task ID <span class="small">(optional)</span><input id="task" placeholder="Leave blank to use the conversation title" maxlength="200"></label>
+<p class="small">A stable internal ID is kept automatically. An existing task ID is a reference; it does not import checkpoints.</p>
+<button id="bind">Connect this conversation</button><button id="unbind" class="secondary" disabled>Disconnect</button>
+</details>
+<hr><section id="goal-section"><h2>Goal / Loop</h2>
+<p class="small">For checkpoints, criteria and evidence, use Open full workspace. This popup provides the basic loop. Set an objective and completion criteria. Start sends it to this conversation, then allows a bounded number of automatic continuations.</p>
+<label>Goal<textarea id="goal" rows="4" maxlength="4000" placeholder="Describe the result and how it should be verified."></textarea></label>
+<label>Maximum automatic continuations<input id="limit" type="number" min="1" max="10" value="3"></label>
+<p id="loop-status" role="status">Not started</p>
+<button id="goal-review" disabled>Review goal</button>
+<section id="goal-preview" hidden><pre id="goal-summary"></pre><p class="small">Only explicit PENDING responses allow another continuation. Missing status, user input, approvals, drafts, disconnection or the limit stop the loop. No automatic tool approvals. No time limit.</p>
+<button id="goal-start" disabled>Start loop and send goal</button><button id="goal-cancel" class="secondary">Cancel</button></section>
+<button id="goal-stop" class="secondary" disabled>Stop automatic messages</button>
+<p class="small">Stop prevents further continuations. A message already being sent and tools already running may finish. Keep this ChatGPT tab open; the extension popup may be closed.</p></section>
+<hr><label>Message to send<textarea id="text" rows="5" maxlength="12000">Continue the task within its already authorized scope. Check the latest checkpoint and existing results first. Do not repeat operations with an unknown outcome.</textarea></label>
+<button id="preview" disabled>Review message</button>
+<section id="review" hidden><h2>Review before sending</h2><p id="destination"></p><pre id="summary"></pre><button id="send" disabled>Send to this conversation</button><button id="cancel" class="secondary" disabled>Cancel preview</button></section>
+<section id="receipt" hidden><h2>Last delivery</h2><p id="delivery"></p><button id="new" class="secondary" hidden>Write another message</button></section>
+<p class="small">Automatic continuation runs only after Start. Existing drafts are preserved. Uncertain deliveries are never retried automatically.</p>
+<script src="popup.js"></script></body></html>

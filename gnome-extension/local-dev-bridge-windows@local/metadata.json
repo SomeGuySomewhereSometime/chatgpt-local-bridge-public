@@ -1,0 +1,8 @@
+{
+  "uuid": "local-dev-bridge-windows@local",
+  "name": "Local Dev Bridge Windows",
+  "description": "Identify and focus exact GNOME windows for Local Dev Bridge. No keyboard, screenshots or shell commands.",
+  "shell-version": ["50"],
+  "version": 1,
+  "session-modes": ["user"]
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=ChatGPT Local Bridge Desktop tunnel
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/bridge-user/.local/bin/tunnel-client run --profile-dir /home/bridge-user/.config/tunnel-client --profile chatgpt-local-bridge-desktop
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
